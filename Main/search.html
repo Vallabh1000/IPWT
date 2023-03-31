@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/search.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">⍝ HOME</a>
+    </header>
+    <center>
+        <h1>Search for Donor</h1>
+
+        <form id="search-form" method="post">
+            <table>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city"></td>
+                </tr>
+                <tr>
+                    <td><label for="blood-type">Blood Type:</label></td>
+                    <td>
+                        <select id="blood_type" name="blood_type">
+                            <option value="">--Please choose a blood type--</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="O">O</option>
+                            <option value="AB">AB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="rh">Rh Factor:</td>
+                    <td>
+                        <input type="radio" id="positive" name="rh_factor" value="POSITIVE" checked>
+                        <label for="positive">Positive</label><br>
+                        <input type="radio" id="negative" name="rh_factor" value="NEGATIVE">
+                        <label for="negative">Negative</label><br><br>
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Search">
+        </form>
+    </center>
+</body>
+
+</html>

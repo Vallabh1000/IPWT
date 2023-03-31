@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/registration.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">⍝ Home</a>
+    </header>
+
+    <form id="registration-form" method="post">
+        <table id="registrationPage">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required><br></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td>
+                    <select id="city" name="city" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Tambaram">Tambaram</option>
+                        <option value="Adyar">Adyar</option>
+                        <option value="Velachery">Velachery</option>
+                        <option value="Ambattur">Ambattur</option>
+                        <option value="Avadi">Avadi</option>
+                        <option value="Perambur">Perambur</option>
+                    </select><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="phone_number">Phone number:</label></td>
+                <td><input type="text" id="phone_number" name="phone_number" pattern="[0-9]{10}" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="blood_type">Blood Type:</label></td>
+                <td><select id="blood_type" name="blood_type" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="rh_factor">Rh Factor:</label><br></td>
+
+                <td>Positive:
+                    <input type="radio" id="rh-factor-positive" name="rh_factor" value="POSITIVE"><br>
+                    Negative:<input type="radio" id="rh-factor-negative" name="rh_factor" value="NEGATIVE"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Address:</label><br></td>
+
+                <td><textarea id='address' name='address' rows='4' cols='50'></textarea><br></td>
+            </tr>
+
+        </table>
+
+        <input type='submit' value='Create Donor'>
+        <input type='reset' value='Clear'>
+    </form>
+</body>
+
+</html>
